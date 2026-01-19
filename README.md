@@ -1,5 +1,5 @@
-#Market Risk Regime Detection with Market & Macroeconomic Signals
-##Overview
+# Market Risk Regime Detection with Market & Macroeconomic Signals
+## Overview
 
 This project explores market behaviour under changing economic conditions by modelling and anticipating high-volatility market regimes using a combination of market data and macroeconomic indicators.
 
@@ -8,7 +8,7 @@ detecting and anticipating transitions into stressed market conditions that matt
 
 The work is framed as a decision support system, not a trading strategy.
 
-Motivation
+## Motivation
 
 In practice, financial institutions do not ask “What will the market price be tomorrow?”
 They ask:
@@ -22,7 +22,7 @@ Should exposure or hedging policies be reviewed?
 Volatility regimes provide a natural and interpretable way to formalise these questions.
 This project therefore models future high-volatility regimes, using information that would realistically be available at the time of prediction.
 
-User of Interest
+## User of Interest
 
 The intended users are:
 
@@ -40,8 +40,8 @@ Early warning alerts
 
 Contextual analysis during macroeconomic stress
 
-Data Sources
-Market Data
+## Data Sources
+### Market Data
 
 Asset: S&P 500 Index (^GSPC)
 
@@ -59,7 +59,7 @@ The COVID-19 shock
 
 The post-2021 inflation and rate-hike environment
 
-Macroeconomic Data (FRED)
+### Macroeconomic Data (FRED)
 
 Federal Funds Rate (monetary policy)
 
@@ -71,8 +71,8 @@ VIX (market-implied fear)
 
 Macroeconomic variables are aligned to daily frequency via forward-fill and lagged conservatively to respect information availability and avoid data leakage.
 
-Feature Engineering
-Market Features
+## Feature Engineering
+### Market Features
 
 The following features capture short- and medium-term market behaviour:
 
@@ -88,7 +88,7 @@ Momentum over 5 and 10 days
 
 These features describe movement, risk, liquidity, and trend strength.
 
-Macro Features
+### Macro Features
 
 Macroeconomic indicators provide context, rather than short-term signals:
 
