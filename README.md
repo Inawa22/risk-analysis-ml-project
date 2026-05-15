@@ -10,8 +10,7 @@ The work is framed as a decision support system, not a trading strategy.
 
 ## Motivation
 
-In practice, financial institutions do not ask “What will the market price be tomorrow?”
-They ask:
+Financial institutions may ask in practice:
 
 Are market conditions becoming unstable?
 
@@ -20,11 +19,14 @@ Is risk increasing beyond normal levels?
 Should exposure or hedging policies be reviewed?
 
 Volatility regimes provide a natural and interpretable way to formalise these questions.
+
 This project therefore models future high-volatility regimes, using information that would realistically be available at the time of prediction.
 
 ## User of Interest
 
 The intended users are:
+
+Market makers
 
 Market risk managers
 
